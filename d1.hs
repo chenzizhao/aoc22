@@ -10,7 +10,7 @@ computeCalories = f.lines where
             Just i -> sumOfStrings xs1 : f xs2 where
                 xs1 = take i xs
                 xs2 = drop (i+1) xs
-            where sumOfStrings ss = sum $ map read ss
+            where sumOfStrings = sum <$> map read
 
 task1 :: String -> Int
 task1 = maximum.computeCalories
