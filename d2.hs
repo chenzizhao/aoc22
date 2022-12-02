@@ -1,6 +1,5 @@
 module Main where
 import Data.Char (ord, chr)
-import Text.Read (Lexeme(Char))
 
 f1 :: String -> Int
 f1 s = n1 + n2 where
